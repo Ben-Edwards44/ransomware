@@ -30,6 +30,7 @@ def main():
   key = Fernet.generate_key()
   
   save_key("key.key", key)
-  encrypt_files()
+  encrypt_files(files, key)
 
+  
 main()
